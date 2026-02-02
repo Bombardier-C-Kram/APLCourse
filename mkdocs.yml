@@ -26,6 +26,10 @@ theme:
   features:
     - navigation.instant
     - content.tooltips
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+    - navigation.sections
 extra_css:
   - documentation-assets/css/main.css
   - documentation-assets/css/extra.css
@@ -48,6 +52,19 @@ extra:
       link: https://twitter.com/dyalogapl
 plugins:
   - privacy
+  - search
+  - macros
+  - monorepo
+  - caption:
+      table:
+        enable: true
+        start_index: 1
+        increment_index: 1
+        position: bottom
+        reference_text: 'Table {index}'
+        caption_prefix: 'Table {index}:'
+  - minify:
+      minify_html: true
 nav:
   - About: index.md
   - basic-syntax-and-arithmetic.md
