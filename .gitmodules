@@ -1,0 +1,3 @@
+[submodule "docs/documentation-assets"]
+	path = docs/documentation-assets
+	url = https://github.com/Dyalog/documentation-assets

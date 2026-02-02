@@ -2,6 +2,8 @@ site_name: APL Course
 site_description: A guided introduction to Dyalog APL
 docs_dir: docs/
 site_url: https://dyalog.com
+copyright: Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener"><strong>Material for MkDocs</strong></a><br/>Copyright &copy; 1982-$CURRENT_YEAR <strong><a href="https://dyalog.com" target="_blank" rel="noopener">Dyalog Limited</a></strong> (<a href="#" class="copy" onclick="navigator.clipboard.writeText(innerText);return false" title="Click to copy!">$BUILD_DATE $GIT_INFO</a>).<br/>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener"><strong>Creative Commons Attribution 4.0 International</strong></a> licence.
+repo_url: https://github.com/Dyalog/APLCourse
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -16,20 +18,27 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - abbr
-extra_javascript:
-  - javascripts/config.js
-  - javascripts/mathjax/tex-mml-chtml.js
 theme:
   name: material
-  favicon: 'img/favicon-32.png'
+  favicon: 'documentation-assets/images/favicon-32.png'
   language: en
-  logo: 'img/dyalog-white.svg'
+  logo: documentation-assets/images/dyalog-logo_white.svg
   features:
     - navigation.instant
     - content.tooltips
 extra_css:
+  - documentation-assets/css/main.css
+  - documentation-assets/css/extra.css
+  - documentation-assets/css/admonition-ucmdhelp.css
   - style/main.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/config.js
+  - javascripts/mathjax/tex-mml-chtml.js
+
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/dyalog
       link: https://dyalog.com
