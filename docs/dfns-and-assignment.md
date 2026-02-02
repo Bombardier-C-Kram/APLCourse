@@ -166,7 +166,7 @@ The following problems can be solved with single-line dfns.
 
 1. The formula to convert temperature from Celsius ($T_C$) to Fahrenheit ($T_F$) in traditional mathematical notation is as follows:
 
-	$$T_F = {32 + {{9}\over{5}}\times {T_C}}$$  
+	{% raw %}$$T_F = 32 + {9\over 5}\times T_C$${% endraw %}  
 
 	Write the function `CtoF` to convert temperatures from Celcius to Farenheit.  
 	```APL
